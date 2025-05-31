@@ -1,0 +1,19 @@
+{
+    "name" : "Mbappe",
+    "description" : "Kilian NFT",
+    "image" : "https://amaranth-ready-quokka-854.mypinata.cloud/ipfs/bafybeidewnphgobu6mf4zeirlutdikfwa223oca3cupx7j6rflqz54zyuq",
+    "attributes" : [
+        
+    { "trait_type": "Stamina", 
+      "value": 9
+    }, 
+    {
+      "trait_type": "Weakness", 
+      "value": "Off-Side"
+    },
+    { "trati_type": "Special Power",
+      "value" : "30% Discount"
+    }	
+    ]
+
+}
