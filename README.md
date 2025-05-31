@@ -20,8 +20,9 @@ It's a simple reward program, that mints an NFT token once the user buys a certa
 2. Line #45 : Proper Use of Require to check the user eligibility to mint an NFT
 
 ## 5. Links & addresses
- #Contract Address: 0x10d4bB94FeB10C970E3ec356622dc4351924820d
- #Webapp link: 
+ Contract Address: 0x10d4bB94FeB10C970E3ec356622dc4351924820d
+
+ Webapp link: 
 
 ## 6. How to run tests
 
@@ -38,7 +39,7 @@ It's a simple reward program, that mints an NFT token once the user buys a certa
         Run `npm run dev` from `lof` folder ad you should be able to interact with the program locally.
         You can also proceed and host the app publicly using Github Pages,Vercel, Fleek ...
         
-2. *** Please note that using a `.env` file is not the safest way to secure your private keys, if you choose to use it ,you must add it to `.gitignore` file before pushing your project, and you must never share or expose your private keys in GH or any other website.***
+2.  ***Please note that using a `.env` file is not the safest way to secure your private keys, if you choose to use it ,you must add it to `.gitignore` file before pushing your project, and you must never share or expose your private keys in GH or any other website.***
 
 ## 8. Demo
 
