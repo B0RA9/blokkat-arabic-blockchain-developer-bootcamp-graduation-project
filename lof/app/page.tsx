@@ -556,7 +556,7 @@ const buyTicket =  async() => {
             ...wagmiContractConfig,
             functionName: "getAnNft",
           });
-          alert("NFT minted!");
+        
         } else {
           alert(
             `You need at least 2 tickets to mint an NFT. You currently have ${numberOfTickets}.`
