@@ -515,7 +515,7 @@ export default function Home() {
 
  },[isConnected])
 
- const { data: ticketsCounter, refetch } = useReadContract({
+ const { data, refetch } = useReadContract({
   ...wagmiContractConfig,
   functionName: "ticketsBought",
   args: [address], 
