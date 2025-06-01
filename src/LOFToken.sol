@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.27;
 
+/// @title Blokkat Bootcamp Project: A simple Loyality Program
+/// @author No0ne
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -53,6 +55,7 @@ contract LOFToken is ERC721URIStorage, Ownable {
         _;
     }
  */
+/// @return Return the number of tickets bought of the connected user
     function numOfTicketsBought() public view returns(uint256){
        return ticketsBought[msg.sender];
     }
@@ -63,14 +66,14 @@ contract LOFToken is ERC721URIStorage, Ownable {
         emit TicketPurchased(msg.sender, ticketsBought[msg.sender]);
     }
 
-    //Mint NFT if the user reached 10 (2 for testing) tickets
+    /// @notice Mint an NFT if the user reached 10 (2 for testing) tickets
     function getAnNft() public {
         require(ticketsBought[msg.sender] >= 2 , "Sorry you are not elegible to mint an NFT");
         _mintLoyaltyNFT(msg.sender);
         ticketsBought[msg.sender] = 0;
     }
 
-    //Mint the NFT to the user address
+    /// @notice Mint the NFT to the elegible user address
     function _mintLoyaltyNFT(address to) internal onlyEligibleForMint(to) {
         uint256 newTokenId = tokenIdCounter++;
         _safeMint(to, newTokenId);
