@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/image"; 
+import { Abi } from "viem";
 import React, { useEffect,useState } from "react";
 import { useReadContract , useWriteContract , useAccount  } from "wagmi";
 
@@ -503,7 +504,7 @@ export default function Home() {
         ],
         "anonymous": false
       }
-    ]
+    ] as Abi
   }
 
   const { address, isConnected } = useAccount();
@@ -518,7 +519,7 @@ export default function Home() {
  const {refetch } = useReadContract({
   ...wagmiContractConfig,
   functionName: "ticketsBought",
-  args: [address], 
+  args: [address as `0x${string}`], 
   query: {
     enabled: !!address, 
   }
