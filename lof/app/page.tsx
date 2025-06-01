@@ -12,7 +12,7 @@ export default function Home() {
   
 
   const wagmiContractConfig ={
-    address: "0x10d4bB94FeB10C970E3ec356622dc4351924820d",
+    address: "0x10d4bB94FeB10C970E3ec356622dc4351924820d" as `0x${string}`,
     abi:  [
       {
         "type": "constructor",
