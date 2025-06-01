@@ -22,7 +22,7 @@ It's a simple reward program, that mints an NFT token once the user buys a certa
 ## 5. Links & addresses
  Contract Address: 0x10d4bB94FeB10C970E3ec356622dc4351924820d
 
- Webapp link: 
+ Webapp link: https://blokkat-arabic-blockchain-developer-six.vercel.app
 
 ## 6. How to run tests
 
@@ -43,4 +43,4 @@ It's a simple reward program, that mints an NFT token once the user buys a certa
 
 ## 8. Demo
 
-    "To do"
+[Watch The Demo](https://amaranth-ready-quokka-854.mypinata.cloud/ipfs/bafybeihprjhfj4l6mlecinv2fgxbscvr7k5lhd25ovu6idatxrmspyksye)
